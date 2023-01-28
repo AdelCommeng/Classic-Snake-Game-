@@ -1,2 +1,5 @@
 # Classic-Snake-Game-
-The fun classic Snake Game that everyone loves to play and get a high score to share it with our friends!
+The fun classic Snake Game that everyone loves to play, challenge their friends to get the high score!
+For my code, I mainly used the Turtle class from the turtle module to create everything including the screen, the snake itself, the fruit and the scoreboard.
+
+
