@@ -10,10 +10,16 @@ class Snake:
     def __init__(self):
         self.segments=[]
         self.createsnake()
+        self.head=self.segments[0]
     def createsnake(self):
         for position in SNAKES:
             self.add_segment(position)
-
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.createsnake()
+        self.head = self.segments[0]
 
     def move(self):
         for seq_sum in range(len(self.segments) - 1, 0, -1):
